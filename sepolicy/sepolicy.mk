@@ -13,6 +13,7 @@ BOARD_SEPOLICY_UNION += \
     property_contexts \
     seapp_contexts \
     adbd.te \
+    hostapd.te \
     installd.te \
     netd.te \
     property.te \
