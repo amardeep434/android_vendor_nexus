@@ -12,6 +12,7 @@ BOARD_SEPOLICY_UNION += \
     genfs_contexts \
     property_contexts \
     seapp_contexts \
+    adbd.te \
     installd.te \
     netd.te \
     property.te \
