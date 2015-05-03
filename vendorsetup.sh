@@ -1,0 +1,4 @@
+add_lunch_combo nexus_grouper-userdebug
+add_lunch_combo nexus_flo-userdebug
+add_lunch_combo nexus_shamu-userdebug
+add_lunch_combo nexus_flounder-userdebug
