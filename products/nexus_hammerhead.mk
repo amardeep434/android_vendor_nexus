@@ -15,23 +15,21 @@
 # Include Pure Nexus common configuration
 include vendor/nexus/main.mk
 
-# Inherit AOSP device configuration
-$(call inherit-product, device/asus/grouper/full_grouper.mk)
+# Include Pure Nexus telephony configuration
+include vendor/nexus/configs/telephony.mk
+
+# Inherit AOSP device configuration for hammerhead
+$(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := nexus_grouper
+PRODUCT_NAME := nexus_hammerhead
 PRODUCT_BRAND := google
-PRODUCT_DEVICE := grouper
-PRODUCT_MODEL := Nexus 7
-PRODUCT_MANUFACTURER := asus
+PRODUCT_DEVICE := hammerhead
+PRODUCT_MODEL := Nexus 5
+PRODUCT_MANUFACTURER := LGE
 
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=nakasi \
-    BUILD_FINGERPRINT=google/nakasi/grouper:5.1/LMY47D/1743759:user/release-keys \
-    PRIVATE_BUILD_DESC="nakasi-user 5.1 LMY47D 1743759 release-keys"
-
-# disable strictmode on boot
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.strictmode.visual=0 \
-    persist.sys.strictmode.disable=1
+    PRODUCT_NAME=hammerhead \
+    BUILD_FINGERPRINT=google/hammerhead/hammerhead:5.1.1/LMY48B/1863243:user/release-keys \
+    PRIVATE_BUILD_DESC="hammerhead-user 5.1.1 LMY48B 1863243 release-keys"
