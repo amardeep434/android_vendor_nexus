@@ -18,6 +18,15 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     libemoji 
 
+# Cyanogen LockClock
+PRODUCT_PACKAGES += \
+    LockClock
+
+# Screen recorder package and lib
+PRODUCT_PACKAGES += \
+    ScreenRecorder \
+    libscreenrecorder
+
 # Busybox
 PRODUCT_PACKAGES += \
     Busybox
