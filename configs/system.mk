@@ -14,8 +14,7 @@
 
 # Include overlays
 PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/nexus/overlay/common \
-    vendor/nexus/overlay/dictionaries
+    vendor/nexus/overlay/common
 
 # init.d script support
 PRODUCT_COPY_FILES += \

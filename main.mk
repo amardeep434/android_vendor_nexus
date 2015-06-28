@@ -19,5 +19,6 @@ include vendor/nexus/configs/system.mk
 include vendor/nexus/configs/nexus_build.mk
 include vendor/nexus/configs/bootanimation.mk
 include vendor/nexus/configs/version.mk
+include vendor/nexus/configs/prebuilt.mk
 
 
