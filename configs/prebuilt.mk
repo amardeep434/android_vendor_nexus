@@ -24,6 +24,11 @@ PRODUCT_PACKAGES += \
     Chrome \
     LatinImeGoogle
 
+ifneq ($(filter nexus_hammerhead nexus_shamu,$(TARGET_PRODUCT)),)
+PRODUCT_PACKAGES += \
+    PrebuiltBugle
+endif
+
 # Google Chrome dependancies
 PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/lib/libchromium_android_linker.so:system/app/Chrome/lib/arm/libchromium_android_linker.so \
@@ -33,3 +38,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/lib/libjni_keyboarddecoder.so:system/app/LatinImeGoogle/lib/arm/libjni_keyboarddecoder.so \
     vendor/nexus/prebuilt/lib/libjni_unbundled_latinimegoogle.so:system/app/LatinImeGoogle/lib/arm/libjni_unbundled_latinimegoogle.so 
+
+# Google Messenger dependancies
+ifneq ($(filter nexus_hammerhead nexus_shamu,$(TARGET_PRODUCT)),)
+PRODUCT_COPY_FILES += \
+    vendor/nexus/prebuilt/lib/libframesequence.so:system/app/PrebuiltBugle/lib/arm/libframesequence.so \
+    vendor/nexus/prebuilt/lib/libgiftranscode.so:system/app/PrebuiltBugle/lib/arm/libgiftranscode.so
+endif
