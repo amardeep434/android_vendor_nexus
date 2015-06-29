@@ -23,6 +23,7 @@ PRODUCT_PACKAGES += \
     CalendarGooglePrebuilt \
     Chrome \
     GCS \
+    GoogleHome \
     GoogleCamera \
     LatinImeGoogle
 
