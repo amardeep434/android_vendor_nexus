@@ -20,6 +20,7 @@ PRODUCT_COPY_FILES += \
 #Google Prebuilts
 PRODUCT_PACKAGES += \
     BrowserProviderProxy \
+    CalendarGooglePrebuilt \
     Chrome \
     LatinImeGoogle
 
