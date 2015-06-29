@@ -25,7 +25,8 @@ PRODUCT_PACKAGES += \
     GCS \
     GoogleHome \
     GoogleCamera \
-    LatinImeGoogle
+    LatinImeGoogle \
+    PrebuiltExchange3Google
 
 ifneq ($(filter nexus_hammerhead nexus_shamu,$(TARGET_PRODUCT)),)
 PRODUCT_PACKAGES += \
