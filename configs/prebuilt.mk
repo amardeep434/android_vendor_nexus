@@ -22,6 +22,7 @@ PRODUCT_PACKAGES += \
     BrowserProviderProxy \
     CalendarGooglePrebuilt \
     Chrome \
+    GCS \
     GoogleCamera \
     LatinImeGoogle
 
