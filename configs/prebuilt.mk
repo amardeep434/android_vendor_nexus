@@ -19,7 +19,14 @@ PRODUCT_COPY_FILES += \
 
 #Google Prebuilts
 PRODUCT_PACKAGES += \
+    BrowserProviderProxy \
+    Chrome \
     LatinImeGoogle
+
+# Google Chrome dependancies
+PRODUCT_COPY_FILES += \
+    vendor/nexus/prebuilt/lib/libchromium_android_linker.so:system/app/Chrome/lib/arm/libchromium_android_linker.so \
+    vendor/nexus/prebuilt/lib/libchrome.so:system/app/Chrome/lib/arm/libchrome.so 
 
 # Google Keyboard dependancies
 PRODUCT_COPY_FILES += \

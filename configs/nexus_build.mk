@@ -15,7 +15,8 @@
 # Main Required Packages
 PRODUCT_PACKAGES += \
     Launcher3 \
-    libemoji 
+    libemoji \
+    PartnerBookmarksProvider
 
 # Cyanogen LockClock
 PRODUCT_PACKAGES += \
