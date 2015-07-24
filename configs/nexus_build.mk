@@ -27,6 +27,10 @@ PRODUCT_PACKAGES += \
     ScreenRecorder \
     libscreenrecorder
 
+# Keyboard Wallpaper Picker
+PRODUCT_PACKAGES += \
+    WallpaperPicker
+    
 # Busybox
 PRODUCT_PACKAGES += \
     Busybox
