@@ -17,6 +17,10 @@ ifneq ($(filter nexus_hammerhead,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/nexus/prebuilt/bootanimation/hammerhead.zip:system/media/bootanimation.zip
 endif
+ifneq ($(filter nexus_mako,$(TARGET_PRODUCT)),)
+    PRODUCT_COPY_FILES += \
+        vendor/nexus/prebuilt/bootanimation/mako.zip:system/media/bootanimation.zip
+endif
 ifneq ($(filter nexus_flo,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/nexus/prebuilt/bootanimation/flo.zip:system/media/bootanimation.zip
