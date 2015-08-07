@@ -28,7 +28,7 @@ PRODUCT_COPY_FILES += \
 
 # Google Apns for tablets
 PRODUCT_COPY_FILES += \
-    vendor/nexus/prebuilt/etc/apns.conf:system/etc/apns.conf
+    vendor/nexus/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # Proprietary latinime lib needed for Keyboard swyping
 PRODUCT_COPY_FILES += \
