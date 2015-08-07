@@ -15,8 +15,11 @@
 ifeq (nexus_flo,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_flo.mk
 endif
-ifeq (nexus_grouper,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_grouper.mk
+ifeq (nexus_hammerhead,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_hammerhead.mk
+endif
+ifeq (nexus_mako,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_mako.mk
 endif
 ifeq (nexus_shamu,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_shamu.mk
