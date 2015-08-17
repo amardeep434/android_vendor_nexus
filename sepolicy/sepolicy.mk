@@ -18,6 +18,7 @@ BOARD_SEPOLICY_UNION += \
     netd.te \
     property.te \
     shell.te \
+    service_contexts \
     sysinit.te \
     system.te \
     ueventd.te \
