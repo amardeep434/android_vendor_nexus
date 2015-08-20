@@ -27,6 +27,10 @@ PRODUCT_PACKAGES += \
     ScreenRecorder \
     libscreenrecorder
 
+# Keyboard Wallpaper Picker
+PRODUCT_PACKAGES += \
+    WallpaperPicker
+
 # Hide layers manager from launcher
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.layers.noIcon=noIcon
