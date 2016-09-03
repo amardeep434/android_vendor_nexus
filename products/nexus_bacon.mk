@@ -16,7 +16,7 @@
 $(call inherit-product, device/oneplus/bacon/aosp_bacon.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/nexus/config/nexus_phone.mk)
+$(call inherit-product, vendor/nexus/configs/nexus_phone.mk)
 
 PRODUCT_NAME := nexus_bacon
 PRODUCT_DEVICE := bacon
