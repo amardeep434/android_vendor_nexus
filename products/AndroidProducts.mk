@@ -15,6 +15,9 @@
 ifeq (nexus_angler,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_angler.mk
 endif
+ifeq (nexus_angler,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_bacon.mk
+endif
 ifeq (nexus_bullhead,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_bullhead.mk
 endif
