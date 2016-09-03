@@ -13,12 +13,12 @@
 # limitations under the License.
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/oneplus/bacon/aosp_bacon.mk
+$(call inherit-product, device/oneplus/bacon/aosp_bacon.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/nexus/config/nexus_phone.mk)
 
-PRODUCT_NAME := aosp_bacon
+PRODUCT_NAME := nexus_bacon
 PRODUCT_DEVICE := bacon
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := A0001
